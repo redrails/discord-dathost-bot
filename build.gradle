@@ -48,6 +48,10 @@ shadowJar {
     archiveVersion.set('')
 }
 
+application {
+    mainClass = 'com.ihtasham.Application'
+}
+
 task stage(dependsOn: ['build', 'shadowJar'])
 build.mustRunAfter clean
 
